@@ -6,19 +6,19 @@ describe('AppComponent', () => {
     imports: [AppComponent]
   }));
 
-  it('should create the app', () => {
+  test('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'testing-with-jest' title`, () => {
+  test(`should have the 'testing-with-jest' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app.title).toEqual('testing-with-jest');
   });
 
-  it('should render title', () => {
+  test('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
